@@ -5888,7 +5888,7 @@ textarea.form-control-lg {
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  color: #fff;
+  color: black;
   text-align: center;
 }
 
@@ -11042,7 +11042,7 @@ blockquote {
   right: 0;
   z-index: 1030;
   border-bottom: 1px solid #dee2e6;
-  background-color: #fff;
+  background-color: #6c757d;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
@@ -11112,6 +11112,7 @@ blockquote {
   }
 }
 
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -11124,8 +11125,10 @@ header.masthead {
   padding-bottom: 8rem;
   background: no-repeat center center;
   background-color: #6c757d;
+
   background-size: cover;
   background-attachment: scroll;
+  
 }
 header.masthead:before {
   content: "";
@@ -11140,7 +11143,7 @@ header.masthead:before {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  color: #fff;
+  /* color: #fff; */
 }
 header.masthead .page-heading,
 header.masthead .site-heading {
@@ -11200,6 +11203,10 @@ header.masthead .site-heading .h1 {
     font-size: 1.875rem;
   }
 }
+
+/* .carousel-caption{
+  color: white
+} */
 
 .section-heading {
   font-size: 2.25rem;
