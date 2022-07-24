@@ -90,6 +90,11 @@
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-radius: 15px;">
                       <button type="button" class="btn btn-outline-light" style="border-radius: 15px">Search</button>
                   </form>
+                  <br>
+                  <!-- 로그인 모달 -->
+                  <form class="d-flex">
+                    <button type="button" class="btn btn-outline-warning" style="border-radius: 15px">로그인</button>     
+                </form>
               </div>
           </div>
         </nav>
@@ -210,6 +215,16 @@
                             on July 8, 2022
                         </p>
                     </div>
+                    <!-- 페이지 넘기기 버튼 -->
+                    <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                      <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                    </nav>
                     <!-- Divider-->
                     <!-- <hr class="my-4" /> -->
                     <!-- Pager-->
@@ -287,11 +302,50 @@
                               </div>
                           </div>
                         </div>
-                    </div>
-                      
+                    </div>   
                 </div>
             </div>
+            <!-- 모달 메시지 창-->
+            <br>
+            <div class="container text-center">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@김민섭">message to @김민섭</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@한지웅">message to @한지웅</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@윤정준">message to @윤정준</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@김덕현">message to @김덕현</button>
+
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
+
+
+
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
